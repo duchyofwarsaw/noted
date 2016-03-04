@@ -1,8 +1,5 @@
 # noted
-an app that brings out the musician in everyone - connecting experienced musicians to individuals motivated to learn music
-
-Official Logo:
-<img src="http://i.imgur.com/ezFPf50.png">
+an app that brings out the musician in everyone - connecting experienced musicians to individuals motivated to learn music>
 
 # user stories
 
