@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BFC1AB99E9EFC5B035EC992D35E7D2A72590D17B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BFC1AB99E9EFC5B035EC992D35E7D2A72590D17B" : 0,
+    "A158D6540441002FB0F30B1F8186FD1C988C7D8F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C3283C15-3FE3-4921-9BE0-5499A541CA47",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BFC1AB99E9EFC5B035EC992D35E7D2A72590D17B" : "noted\/",
+    "A158D6540441002FB0F30B1F8186FD1C988C7D8F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Noted",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Noted\/Noted.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/elanatee\/Yelp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A158D6540441002FB0F30B1F8186FD1C988C7D8F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/duchyofwarsaw\/noted.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFC1AB99E9EFC5B035EC992D35E7D2A72590D17B"
+    }
+  ]
+}
