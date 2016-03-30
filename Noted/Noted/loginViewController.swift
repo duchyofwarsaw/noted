@@ -10,6 +10,7 @@ import UIKit
 
 class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
+    @IBOutlet weak var createProfileButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         if (FBSDKAccessToken.currentAccessToken() != nil)
@@ -19,6 +20,8 @@ class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
+            createProfileButton.layer.cornerRadius = 3
+            //self.returnUserData()
             // User is already logged in, do work such as go to next view controller.
         }
         else
@@ -28,6 +31,7 @@ class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
+            createProfileButton.hidden = true
             
         }
         // Do any additional setup after loading the view.
@@ -54,12 +58,23 @@ class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
             if result.grantedPermissions.contains("email")
             {
                 // Do work
+                createProfileButton.hidden = false
             }
         }
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
+        createProfileButton.hidden = true
+    }
+    
+    func checkLoginStatus() -> Bool {
+        if (FBSDKAccessToken.currentAccessToken() != nil) {
+            return true
+        }
+        else {
+            return false
+        }
     }
     
     func returnUserData()

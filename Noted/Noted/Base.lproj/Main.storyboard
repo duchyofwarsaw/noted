@@ -17,9 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcc-4G-Jcx">
+                                <rect key="frame" x="76" y="310" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.4337496267" green="0.6197187716" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Create Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0es-Zj-DCc" kind="show" id="p5J-HQ-IUX"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="noted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpa-JK-hQy">
-                                <rect key="frame" x="122" y="106" width="77" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="121" y="106" width="78" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,6 +38,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="createProfileButton" destination="hcc-4G-Jcx" id="deI-6B-vh3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,21 +65,21 @@
                                     <constraint firstAttribute="height" constant="100" id="BuS-0m-Acz"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="instrument" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za2-cW-Zf9">
-                                <rect key="frame" x="20" y="200" width="69" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="instrument" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za2-cW-Zf9">
+                                <rect key="frame" x="20" y="199" width="65" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zs-Wl-z5t">
                                 <rect key="frame" x="20" y="241" width="70" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXS-0u-TmH">
-                                <rect key="frame" x="20" y="283" width="37" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <rect key="frame" x="20" y="283" width="36" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -101,7 +115,7 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eST-Fy-vOw">
                                 <rect key="frame" x="20" y="327" width="67" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -110,15 +124,11 @@
                         <constraints>
                             <constraint firstItem="RyD-MV-wKA" firstAttribute="leading" secondItem="bD3-Ct-58x" secondAttribute="leading" constant="20" id="EJx-L6-eyQ"/>
                             <constraint firstItem="RyD-MV-wKA" firstAttribute="top" secondItem="IIy-eW-XuT" secondAttribute="bottom" constant="57" id="EdP-Z9-aZ6"/>
-                            <constraint firstItem="eST-Fy-vOw" firstAttribute="leading" secondItem="Za2-cW-Zf9" secondAttribute="leading" id="MNq-ps-xXJ"/>
                             <constraint firstItem="oXS-0u-TmH" firstAttribute="top" secondItem="0Zs-Wl-z5t" secondAttribute="bottom" constant="8" id="QXl-PM-ekw"/>
                             <constraint firstItem="eST-Fy-vOw" firstAttribute="top" secondItem="oXS-0u-TmH" secondAttribute="bottom" constant="8" id="RgY-gI-qF6"/>
-                            <constraint firstItem="0Zs-Wl-z5t" firstAttribute="top" secondItem="Za2-cW-Zf9" secondAttribute="bottom" constant="8" id="U8S-UN-RYJ"/>
-                            <constraint firstItem="Za2-cW-Zf9" firstAttribute="top" secondItem="RyD-MV-wKA" secondAttribute="bottom" constant="23" id="W0y-gG-rtv"/>
-                            <constraint firstItem="0Zs-Wl-z5t" firstAttribute="leading" secondItem="Za2-cW-Zf9" secondAttribute="leading" id="djT-QY-fIK"/>
-                            <constraint firstItem="oXS-0u-TmH" firstAttribute="leading" secondItem="Za2-cW-Zf9" secondAttribute="leading" id="hwa-lV-eYw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="x4g-e2-MJ1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yo-hZ-VPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
