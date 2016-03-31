@@ -21,7 +21,7 @@ class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
             createProfileButton.layer.cornerRadius = 3
-            //self.returnUserData()
+            self.returnUserData()
             // User is already logged in, do work such as go to next view controller.
         }
         else
@@ -98,7 +98,7 @@ class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
         })
     }
     
-
+    
     /*
     // MARK: - Navigation
 
